@@ -77,6 +77,11 @@
 .fairy {
     background-color: #f9aec7;
 }
+h1{
+    color: rgb(249, 46, 46);
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px whitesmoke;
+}
 
 .pokemon {
     display: flex;
@@ -84,6 +89,12 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+.pokemon:hover{
+    border: 1px solid red;
+    padding: 1rem 2rem;
+
 }
 
 .pokemon .number {
@@ -144,6 +155,25 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+.showPokemon{
+    width: 60vw;
+    display: block;
+    justify-content: center;
+    margin: .5rem auto;
+    padding: 0;
+    border-radius: 1rem;
+    color: white;
+    line-height: 1.15em;
+}
+
+.showPokemon.pokemon{
+    width: 100%;
+    margin: 0;
+}
+.showPokemon li{
+    font-size: 0.65em;
 }
 
 @media screen and (min-width: 380px) {
