@@ -70,6 +70,10 @@ function mostraPokemon(pokemon){
             .then((pokemon = []) => showPokemon.innerHTML = pokemon.map(
                 convertPokemonToDetail).join()
             )
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });   
     }) 
     
 }
